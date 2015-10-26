@@ -1,0 +1,76 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+.faqs {
+	 text-align: left;
+}
+
+.faqs p{
+	text-align: left;
+	max-width: 100%;
+}
+html { 
+  background: url("http://www.canny-creative.com/wp-content/uploads/2013/09/Light-Texture-Background-AppNorth.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+ .container {
+  position: relative;
+   margin: 20px;
+   width: 275px;
+   text-align: center;
+   float: left;
+ }
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#nav {
+	width: 100%;
+	height: 60px;
+	background: #000;
+	float: left;
+}
+
+#nav_bar a, #sign a {
+	line-height: 60px;
+	color: #FFF;
+	padding: 0 20px 0 20px;
+	text-decoration: none;
+	font-size: 16px;
+}
+#nav_bar{
+	margin: 0 0 0 5%;
+	float: left;
+}
+
+#sign {
+	float: right;
+	margin: 0 5% 0 0;
+}
+
+#main_wrap {
+	width: 90%;
+	float: left;
+	margin: 20px 5% 0 5%;
+}

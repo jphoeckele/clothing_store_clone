@@ -1,0 +1,27 @@
+<h1>Your Future Purchase</h1>
+<br><br>
+<p>
+  <strong><u><%= @product.title %></u></strong>
+</p>
+<p>
+  <%= image_tag @product.image_url %>
+<p>
+  <strong><u>Description</u></strong><br>
+  <%= @product.description %>
+</p>
+
+
+<p>
+  <strong>Price: </strong>
+  $<%= @product.price %>.00
+</p>
+
+<p>
+  <strong>Category: </strong>
+  <%= @product.category %>
+</p>
+</p>
+<p><strong><a href="/cart/<%= @product.id %>">Add To Cart</a></strong></p>
+
+<%= link_to 'Edit', edit_product_path(@product) %>
+<%= link_to 'Back', products_path %>

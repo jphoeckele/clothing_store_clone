@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<%= favicon_link_tag 'H.png' %>
+	<title>Solutions</title>
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<%= csrf_meta_tags %>
+</head>
+<body>
+	<nav id="nav">
+		<div id="nav_bar">
+		<%= image_tag("http://www.express.com/local-cdn/static/images/express-logo_2x.png", :size => "180x30", :alt => "rss feed") %>
+			<%= link_to "Home", root_path %>
+			<%= link_to "Shop", products_path %>
+			<%= link_to "About", page_about_path %>
+			<%= link_to "Faqs", page_faqs_path %>
+			<%= link_to "Connect", "http://johnhoeckele.herokuapp.com//" %>
+		</div>
+		<div id="sign">
+			<% if user_signed_in? %>
+			<%= link_to 'View Cart', cart_path %>
+			<%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
+			<% else %>
+			<%= link_to "Sign In", new_user_session_path %>
+			<%= link_to "Sign Up", new_user_registration_path %>
+			<% end %>
+		</div>
+	</nav>
+
+<div id="main_wrap">
+
+	<p class="notice"><%= notice %></p>
+	<p class="alert"><%= alert %></p>
+
+	<%= yield %>
+</div>
+
+    <footer>
+      <div class="container">
+        | JPH PRODUCTIONS |
+      </div>
+    </footer>
+</body>
+</html>
