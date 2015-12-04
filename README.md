@@ -1,1 +1,2 @@
 # clothing_store_clone
+I spent a weekend creating a couple of random website clones in order to practice using Ruby, Rails, and CRUD. This one was meant to resemble the Express clothing line's website. I only spent a few hours actually working on the site and never fully fleshed out all of the links. The images are copied directly from Express' site and I formatted mine to look like the original. I have some bootstrap elements mixed in and the main page is made to resemble the men's clothing page. Just practice and familiarizing myself with Rails. 
